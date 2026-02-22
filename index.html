@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>jorge</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #111;
+    }
+
+    button {
+      font-size: 40px;
+      padding: 40px 80px;
+      border: none;
+      border-radius: 20px;
+      background-color: #ff0000;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 0 20px red;
+      transition: transform 0.1s;
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+  </style>
+</head>
+
+<body>
+
+  <button onclick="sonar()">jorge</button>
+
+  <audio id="sonido">
+    <source src="sonido.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    function sonar() {
+      document.getElementById("sonido").play();
+    }
+  </script>
+
+</body>
+</html>
